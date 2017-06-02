@@ -1,0 +1,17 @@
+
+platform :ios, '10.0'
+use_frameworks!
+
+target 'Meemo' do
+	pod 'MXParallaxHeader'
+    pod 'Alamofire', '~> 4.4'
+    pod 'Firebase/Core'
+    pod 'Firebase/Database'
+    pod 'Mixpanel'
+    pod 'Firebase/Messaging'
+    pod 'Fingertips'
+    pod 'TouchVisualizer', '~>2.0.1'
+
+
+end
+
