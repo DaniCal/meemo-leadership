@@ -18,9 +18,11 @@ class SessionsViewController: MXScrollViewController {
     var lectures:[Lecture] = []
 
     var lectureNumber:Int?
+    var dismissWhenAppears = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        dismissWhenAppears = false
         lectures = (UIApplication.shared.delegate as! AppDelegate).lectures
         lectureNumber = (UIApplication.shared.delegate as! AppDelegate).selectedLecture
         
@@ -32,7 +34,14 @@ class SessionsViewController: MXScrollViewController {
         overlay.frame = self.view.bounds
         overlay.button.addTarget(self, action: #selector(self.dismissSessionsList), for: UIControlEvents.touchUpInside)
         //self.view.addSubview(overlay)
-
+        
+        if(dismissWhenAppears){
+            dismissSessionsList()
+        }
+    }
+    
+    func lectureCompleted(){
+        self.dismissWhenAppears = true
     }
     
     func dismissSessionsList(){

@@ -83,6 +83,7 @@ class SessionsListViewController: UIViewController{
     
     func lectureCompleted(){
         sourceView?.dismiss(animated: true, completion: nil)
+        sourceView?.lectureCompleted()
     }
     
     

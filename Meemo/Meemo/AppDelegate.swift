@@ -30,7 +30,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, FirebaseSynchornizeDelega
     
     var mixpanel:Mixpanel!
     let mixpanelTestToken = "961d5f96adf20b0bb0a9096a9a524ffa"
-    let mixpanelProductionToken = "cf7f7b02a3f2c9f5e9621db336e785c4"
     var mixpanelToken = "961d5f96adf20b0bb0a9096a9a524ffa"
 
 
@@ -278,7 +277,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, FirebaseSynchornizeDelega
                 if(launchedBefore){
                     self.showHomeViewController()
                 }
-
             }
         }
     }
