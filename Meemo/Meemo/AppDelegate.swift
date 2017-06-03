@@ -48,18 +48,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate, FirebaseSynchornizeDelega
         }
         
         
-        let context = persistentContainer.viewContext
-        do{
-            lecturesMO = try context.fetch(LectureMO.fetchRequest())
-        }catch{
-            print("Fetching failed!")
-        }
+//        let context = persistentContainer.viewContext
+//        do{
+//            lecturesMO = try context.fetch(LectureMO.fetchRequest())
+//        }catch{
+//            print("Fetching failed!")
+//        }
+//        
+//        if(lecturesMO.count == 0){
+//            setUpData()
+//        }
         
-        if(lecturesMO.count == 0){
-            setUpData()
-        }
-        
-        getData()
         
         connectToFBCloudMessages()
         
@@ -165,30 +164,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, FirebaseSynchornizeDelega
 
         
     }
-    
-    func setUpData(){
-        let context = self.persistentContainer.viewContext
-        
-        let lecture = LectureMO(context: context)
-        lecture.number = 0
-        lecture.watched = false
-        lecture.locked = false
-        
-        let session = SessionMO(context: context)
-        session.next = true
-        session.watched = false
-        session.number = 0
-        
-        lecture.addToSessions(session)
-    
-        self.saveContext()
-        
-        
-    }
-    
+
     
     
     func firebaseDidLoadLectures(_ lectures:[Lecture]){
+        getData()
         self.lectures = lectures
         loadImages()
     }

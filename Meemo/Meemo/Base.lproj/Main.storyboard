@@ -380,19 +380,31 @@ yourself day by day.</string>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3cg-2t-2iZ">
                                                             <rect key="frame" x="0.0" y="0.0" width="333" height="140"/>
                                                             <subviews>
-                                                                <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="playButtonYellow" translatesAutoresizingMaskIntoConstraints="NO" id="lMN-FE-hQG">
-                                                                    <rect key="frame" x="132" y="29" width="69" height="46"/>
+                                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lectureCompleted" translatesAutoresizingMaskIntoConstraints="NO" id="lMN-FE-hQG">
+                                                                    <rect key="frame" x="234" y="11" width="73" height="21"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="height" constant="46" id="XdL-eN-NON"/>
-                                                                        <constraint firstAttribute="width" constant="69" id="nKG-NO-SvR"/>
+                                                                        <constraint firstAttribute="height" constant="21" id="XdL-eN-NON"/>
+                                                                        <constraint firstAttribute="width" constant="73" id="nKG-NO-SvR"/>
                                                                     </constraints>
                                                                 </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 clips left" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IT6-lT-bRk">
+                                                                    <rect key="frame" x="234" y="11" width="73" height="21"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="73" id="tJH-Ef-i4h"/>
+                                                                        <constraint firstAttribute="height" constant="21" id="vOr-Sv-Mqj"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="12"/>
+                                                                    <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
                                                             </subviews>
                                                             <color key="backgroundColor" white="0.0" alpha="0.25431985294117648" colorSpace="calibratedWhite"/>
                                                             <constraints>
-                                                                <constraint firstItem="lMN-FE-hQG" firstAttribute="centerX" secondItem="3cg-2t-2iZ" secondAttribute="centerX" id="k6y-Iy-nNJ"/>
-                                                                <constraint firstItem="lMN-FE-hQG" firstAttribute="centerY" secondItem="3cg-2t-2iZ" secondAttribute="centerY" constant="-17.5" id="qIe-GS-3qJ"/>
+                                                                <constraint firstAttribute="trailing" secondItem="IT6-lT-bRk" secondAttribute="trailing" constant="26" id="7Bt-ox-N9E"/>
+                                                                <constraint firstItem="lMN-FE-hQG" firstAttribute="centerX" secondItem="3cg-2t-2iZ" secondAttribute="centerX" constant="104" id="FA7-RC-pkd"/>
+                                                                <constraint firstItem="IT6-lT-bRk" firstAttribute="top" secondItem="3cg-2t-2iZ" secondAttribute="bottom" constant="-129" id="Lsc-jO-Scs"/>
                                                                 <constraint firstAttribute="height" constant="140" id="uPa-wQ-gSH"/>
+                                                                <constraint firstItem="lMN-FE-hQG" firstAttribute="centerY" secondItem="3cg-2t-2iZ" secondAttribute="centerY" constant="-48.5" id="xxf-22-iLH"/>
                                                             </constraints>
                                                         </view>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="portraitSamDustin" translatesAutoresizingMaskIntoConstraints="NO" id="sSo-14-Ule">
@@ -484,6 +496,8 @@ yourself day by day.</string>
                                             <outlet property="author" destination="Jwe-wc-Gqp" id="nHA-Hl-em0"/>
                                             <outlet property="authorSubtitle" destination="mBN-XX-kkF" id="Ahj-8W-giW"/>
                                             <outlet property="backgroundImage" destination="Yr6-xp-kkM" id="0uu-YO-SFM"/>
+                                            <outlet property="clipsLeftLabel" destination="IT6-lT-bRk" id="QI7-J8-3SV"/>
+                                            <outlet property="completedImage" destination="lMN-FE-hQG" id="S9l-Fo-36V"/>
                                             <outlet property="courseTitle" destination="t8f-D5-iyh" id="C7Z-Fl-yI7"/>
                                             <outlet property="portrait" destination="sSo-14-Ule" id="GWS-cZ-EBs"/>
                                             <outlet property="view" destination="pts-Tp-976" id="Iwi-86-j57"/>
@@ -508,7 +522,7 @@ yourself day by day.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aYT-BU-HhT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-186" y="35"/>
+            <point key="canvasLocation" x="-186.40000000000001" y="34.632683658170919"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="6dL-bN-czz">
@@ -1309,10 +1323,10 @@ video. On to the next one!</string>
         <image name="carouselBackgroundPlaceholder" width="122" height="237"/>
         <image name="gradientSessionsList" width="187" height="209"/>
         <image name="gradientWatchButton" width="750" height="204"/>
+        <image name="lectureCompleted" width="245" height="37"/>
         <image name="logoRed" width="118" height="118"/>
         <image name="overviewtest" width="257" height="257"/>
         <image name="playButtonEmptyGreen" width="51" height="51"/>
-        <image name="playButtonYellow" width="62" height="62"/>
         <image name="portraitSamDustin" width="364" height="173"/>
         <image name="summaryButton" width="236" height="52"/>
         <image name="watchCourseButton" width="288" height="52"/>

@@ -24,13 +24,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Meemo/AppDelegate.swift"
-            timestampString = "518105570.146245"
+            timestampString = "518166121.305777"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "196"
-            endingLineNumber = "196"
-            landmarkName = "AppDelegate"
-            landmarkType = "3">
+            startingLineNumber = "178"
+            endingLineNumber = "178"
+            landmarkName = "showLoadingScreen()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -40,11 +40,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Meemo/AppDelegate.swift"
-            timestampString = "518105570.146245"
+            timestampString = "518166121.305777"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
             landmarkName = "enableNotification()"
             landmarkType = "7">
          </BreakpointContent>

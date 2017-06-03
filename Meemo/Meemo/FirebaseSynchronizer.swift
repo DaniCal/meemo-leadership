@@ -33,6 +33,20 @@ class FirebaseSynchronizer: NSObject{
             
             var lectures:[Lecture] = []
             let enumerator = snapshot.children
+        
+            
+            var lecturesMO:[LectureMO] = []
+            
+            let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+            do{    
+                lecturesMO = try context.fetch(LectureMO.fetchRequest())
+            }catch{
+                print("Fetching failed!")
+            }
+            
+            if(lecturesMO.count == 0){
+                setUpData(numberOfLectures: Int(snapshot.childrenCount))
+            }
             
             while let lecture = enumerator.nextObject() as? FIRDataSnapshot{
                 lectures.append(parseLecture(lecture))
@@ -41,6 +55,31 @@ class FirebaseSynchronizer: NSObject{
             self.delegate?.firebaseDidLoadLectures!(lectures)
             
         })
+    }
+    
+    static func setUpData(numberOfLectures: Int){
+        for index in 0...numberOfLectures{
+            setUpLectureData(lectureNumber: index)
+        }
+    }
+    
+    static func setUpLectureData(lectureNumber : Int){
+        
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        
+        let lecture = LectureMO(context: context)
+        lecture.number = Int16(lectureNumber)
+        lecture.watched = false
+        lecture.locked = false
+        
+        let session = SessionMO(context: context)
+        session.next = true
+        session.watched = false
+        session.number = Int16(0)
+        
+        lecture.addToSessions(session)
+        
+        (UIApplication.shared.delegate as! AppDelegate).saveContext()
     }
     
     static func parseLecture(_ lectureSnapshot: FIRDataSnapshot)->Lecture{

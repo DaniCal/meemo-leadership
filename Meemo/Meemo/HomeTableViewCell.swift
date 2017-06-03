@@ -10,6 +10,8 @@ import UIKit
 
 class HomeTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var completedImage: UIImageView!
+    @IBOutlet weak var clipsLeftLabel: UILabel!
     @IBOutlet weak var authorSubtitle: UILabel!
     @IBOutlet weak var author: UILabel!
     @IBOutlet weak var courseTitle: UILabel!
@@ -42,6 +44,21 @@ class HomeTableViewCell: UITableViewCell {
             authorSubtitle.text = lecture.authorDescription
             portrait.image = lecture.portraitImage
             backgroundImage.image = lecture.featuredImage
+            
+            if(lecture.sessions[lecture.sessions.count - 1].watched){
+                completedImage.isHidden = false
+                clipsLeftLabel.isHidden = true
+            }else{
+                completedImage.isHidden = true
+                clipsLeftLabel.isHidden = false
+                var clipsLeft = 0
+                for session in lecture.sessions{
+                    if(session.watched == false){
+                        clipsLeft = clipsLeft + 1
+                    }
+                }
+                clipsLeftLabel.text = "\(clipsLeft) clips left"
+            }
             
             view.layer.cornerRadius = 12
             view.layer.masksToBounds = true
