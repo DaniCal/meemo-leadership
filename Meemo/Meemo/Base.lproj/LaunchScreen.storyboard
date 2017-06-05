@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoSuster" translatesAutoresizingMaskIntoConstraints="NO" id="Ta1-wS-okk">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoBlue" translatesAutoresizingMaskIntoConstraints="NO" id="Ta1-wS-okk">
                                 <rect key="frame" x="128" y="274" width="118" height="118"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="118" id="NJU-Ji-pMm"/>
@@ -29,7 +29,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.95159643888473511" green="0.15205669403076172" blue="0.36675125360488892" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.10196078431372549" green="0.10980392156862745" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Ta1-wS-okk" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="4Yy-2n-qH7"/>
                             <constraint firstItem="Ta1-wS-okk" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Otb-au-BkD"/>
@@ -42,6 +42,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logoSuster" width="114" height="114"/>
+        <image name="logoBlue" width="150" height="150"/>
     </resources>
 </document>

@@ -23,6 +23,8 @@ class GetStartedViewController: UIViewController {
     
     
     @IBAction func getStarted(_ sender: Any) {
+        UserDefaults.standard.set(true, forKey: "launchedBefore")
+
         (UIApplication.shared.delegate as! AppDelegate).showHomeViewController()
     }
 
