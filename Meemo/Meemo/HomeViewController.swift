@@ -64,7 +64,13 @@ extension HomeViewController: UITableViewDataSource{
 extension HomeViewController: UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        (UIApplication.shared.delegate as! AppDelegate).selectedLecture = indexPath.row
+        let selectedLecture = indexPath.row
+        (UIApplication.shared.delegate as! AppDelegate).selectedLecture = selectedLecture
+        
+        if(lectures[selectedLecture].commingSoon){
+            return
+        }
+        
         self.performSegue(withIdentifier: "showSessions" , sender: indexPath)
         
     }

@@ -21,6 +21,10 @@ class HomeTableViewCell: UITableViewCell {
     @IBOutlet weak var portrait: UIImageView!
     @IBOutlet weak var backgroundImage: UIImageView!
     
+    
+    let gray = UIColor(red: 205/255, green: 205/255, blue: 205/255, alpha: 1.0)
+    let meemoColor = UIColor(red: 108/255, green: 225/255, blue: 222/255, alpha: 1.0)
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -48,6 +52,7 @@ class HomeTableViewCell: UITableViewCell {
             backgroundImage.image = lecture.featuredImage
             
             startButton.text = getButtonLabel()
+            buttonBackground.backgroundColor = getBackgroundColor()
             
             if(lecture.sessions[lecture.sessions.count - 1].watched){
                 completedImage.isHidden = false
@@ -79,6 +84,13 @@ class HomeTableViewCell: UITableViewCell {
         self.selectionStyle = UITableViewCellSelectionStyle.none
     }
     
+    func getBackgroundColor() -> UIColor{
+        if(lecture?.commingSoon)!{
+            return self.gray
+        }else{
+            return self.meemoColor
+        }
+    }
     
     
     func getButtonLabel() -> String{
