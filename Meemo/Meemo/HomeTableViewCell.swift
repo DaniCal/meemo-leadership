@@ -10,6 +10,8 @@ import UIKit
 
 class HomeTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var buttonBackground: UIView!
+    @IBOutlet weak var startButton: UILabel!
     @IBOutlet weak var completedImage: UIImageView!
     @IBOutlet weak var clipsLeftLabel: UILabel!
     @IBOutlet weak var authorSubtitle: UILabel!
@@ -45,6 +47,8 @@ class HomeTableViewCell: UITableViewCell {
             portrait.image = lecture.portraitImage
             backgroundImage.image = lecture.featuredImage
             
+            startButton.text = getButtonLabel()
+            
             if(lecture.sessions[lecture.sessions.count - 1].watched){
                 completedImage.isHidden = false
                 clipsLeftLabel.isHidden = true
@@ -73,7 +77,20 @@ class HomeTableViewCell: UITableViewCell {
             
         }
         self.selectionStyle = UITableViewCellSelectionStyle.none
-        
+    }
+    
+    
+    
+    func getButtonLabel() -> String{
+        if(lecture?.commingSoon)!{
+            return "COMING SOON"
+        }else if(!(lecture?.sessions[0].watched)!){
+            return "START"
+        }else if(lecture?.sessions[(lecture?.sessions.count)! - 1].watched)!{
+            return "WATCH AGAIN"
+        }else{
+            return "CONTINUE"
+        }
     }
     
     

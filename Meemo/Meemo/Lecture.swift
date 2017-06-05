@@ -22,7 +22,7 @@ class Lecture:NSObject{
     var watched: Bool
     var sessions:[Session]
     var advices: [Advice]
-    
+    var commingSoon = false
     
     /*
      TODO
@@ -43,6 +43,7 @@ class Lecture:NSObject{
         self.author = ""
         self.authorDescription = ""
         self.portraitImage = UIImage(named: "portraitSamDustin")!
+        self.commingSoon = false
     }
     
     override init(){
@@ -57,6 +58,7 @@ class Lecture:NSObject{
         self.author = ""
         self.authorDescription = ""
         self.portraitImage = UIImage(named: "portraitSamDustin")!
+        self.commingSoon = false
 
     }
     

@@ -323,7 +323,7 @@ day by day.</string>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pts-Tp-976">
                                                     <rect key="frame" x="19" y="0.0" width="333" height="329"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="overviewtest" translatesAutoresizingMaskIntoConstraints="NO" id="Yr6-xp-kkM">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="overviewtest" translatesAutoresizingMaskIntoConstraints="NO" id="Yr6-xp-kkM">
                                                             <rect key="frame" x="0.0" y="0.0" width="333" height="140"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="140" id="klM-cB-b8W"/>
@@ -368,7 +368,7 @@ day by day.</string>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="09K-yD-Zn7">
                                                             <rect key="frame" x="0.0" y="279" width="333" height="50"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENROLL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXM-qz-abS">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="START" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXM-qz-abS">
                                                                     <rect key="frame" x="0.0" y="0.0" width="333" height="50"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="50" id="OTz-gu-tGv"/>
@@ -387,12 +387,6 @@ day by day.</string>
                                                                 <constraint firstAttribute="bottom" secondItem="rXM-qz-abS" secondAttribute="bottom" id="ycG-0D-Eaf"/>
                                                             </constraints>
                                                         </view>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leadership in Tech" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8f-D5-iyh">
-                                                            <rect key="frame" x="0.0" y="190.5" width="333" height="30.5"/>
-                                                            <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="22"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Christian Rebernik" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jwe-wc-Gqp">
                                                             <rect key="frame" x="8" y="234.5" width="325" height="19.5"/>
                                                             <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
@@ -402,6 +396,15 @@ day by day.</string>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CTO at N26, Zanox &amp; Parship" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mBN-XX-kkF">
                                                             <rect key="frame" x="8" y="254" width="325" height="17"/>
                                                             <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How Give better Feedback" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8f-D5-iyh">
+                                                            <rect key="frame" x="39" y="175" width="255" height="62"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="62" id="l0w-Re-gQo"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="22"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -415,24 +418,23 @@ day by day.</string>
                                                         <constraint firstItem="3cg-2t-2iZ" firstAttribute="leading" secondItem="pts-Tp-976" secondAttribute="leading" id="58j-6Z-MGe"/>
                                                         <constraint firstItem="09K-yD-Zn7" firstAttribute="leading" secondItem="pts-Tp-976" secondAttribute="leading" id="66U-qf-9H3"/>
                                                         <constraint firstAttribute="trailing" secondItem="09K-yD-Zn7" secondAttribute="trailing" id="6q1-Xb-gIm"/>
-                                                        <constraint firstItem="Jwe-wc-Gqp" firstAttribute="top" secondItem="t8f-D5-iyh" secondAttribute="bottom" constant="13.5" id="9uX-3W-gXi"/>
                                                         <constraint firstAttribute="bottom" secondItem="09K-yD-Zn7" secondAttribute="bottom" id="BTS-KI-keD"/>
                                                         <constraint firstItem="09K-yD-Zn7" firstAttribute="centerX" secondItem="pts-Tp-976" secondAttribute="centerX" id="HYv-Sp-gTp"/>
                                                         <constraint firstAttribute="bottom" secondItem="mBN-XX-kkF" secondAttribute="bottom" constant="58" id="I24-Bx-kYt"/>
                                                         <constraint firstItem="Jwe-wc-Gqp" firstAttribute="leading" secondItem="pts-Tp-976" secondAttribute="leading" constant="8" id="IOs-8J-JfP"/>
-                                                        <constraint firstItem="t8f-D5-iyh" firstAttribute="leading" secondItem="pts-Tp-976" secondAttribute="leading" id="LK3-yE-Ojg"/>
                                                         <constraint firstAttribute="height" constant="329" id="Mpp-fJ-no9"/>
+                                                        <constraint firstItem="t8f-D5-iyh" firstAttribute="centerX" secondItem="pts-Tp-976" secondAttribute="centerX" id="Nxa-IM-h7c"/>
                                                         <constraint firstItem="sSo-14-Ule" firstAttribute="leading" secondItem="pts-Tp-976" secondAttribute="leading" id="Scg-E0-gkN"/>
                                                         <constraint firstAttribute="trailing" secondItem="3cg-2t-2iZ" secondAttribute="trailing" id="T6g-sL-ahW"/>
                                                         <constraint firstItem="3cg-2t-2iZ" firstAttribute="top" secondItem="pts-Tp-976" secondAttribute="top" id="VKV-gX-hff"/>
                                                         <constraint firstItem="Yr6-xp-kkM" firstAttribute="centerX" secondItem="pts-Tp-976" secondAttribute="centerX" id="XCE-TJ-l3b"/>
                                                         <constraint firstAttribute="trailing" secondItem="Yr6-xp-kkM" secondAttribute="trailing" id="Z3i-BS-ydY"/>
+                                                        <constraint firstItem="t8f-D5-iyh" firstAttribute="top" secondItem="sSo-14-Ule" secondAttribute="bottom" constant="1" id="ZZn-8Q-BJe"/>
                                                         <constraint firstAttribute="trailing" secondItem="sSo-14-Ule" secondAttribute="trailing" id="dPi-pC-AQP"/>
-                                                        <constraint firstItem="t8f-D5-iyh" firstAttribute="centerX" secondItem="pts-Tp-976" secondAttribute="centerX" id="fT0-UL-Dlq"/>
                                                         <constraint firstItem="mBN-XX-kkF" firstAttribute="leading" secondItem="pts-Tp-976" secondAttribute="leading" constant="8" id="nGf-4a-lN0"/>
                                                         <constraint firstItem="Yr6-xp-kkM" firstAttribute="top" secondItem="pts-Tp-976" secondAttribute="top" id="oG5-r5-Xvu"/>
+                                                        <constraint firstItem="t8f-D5-iyh" firstAttribute="leading" secondItem="pts-Tp-976" secondAttribute="leading" constant="39" id="qs2-wZ-QdO"/>
                                                         <constraint firstItem="sSo-14-Ule" firstAttribute="top" secondItem="Yr6-xp-kkM" secondAttribute="bottom" constant="-38" id="swp-da-FIY"/>
-                                                        <constraint firstAttribute="trailing" secondItem="t8f-D5-iyh" secondAttribute="trailing" id="vUz-xR-fLN"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -448,10 +450,12 @@ day by day.</string>
                                             <outlet property="author" destination="Jwe-wc-Gqp" id="nHA-Hl-em0"/>
                                             <outlet property="authorSubtitle" destination="mBN-XX-kkF" id="Ahj-8W-giW"/>
                                             <outlet property="backgroundImage" destination="Yr6-xp-kkM" id="0uu-YO-SFM"/>
+                                            <outlet property="buttonBackground" destination="09K-yD-Zn7" id="ri6-oL-cfe"/>
                                             <outlet property="clipsLeftLabel" destination="IT6-lT-bRk" id="QI7-J8-3SV"/>
                                             <outlet property="completedImage" destination="lMN-FE-hQG" id="S9l-Fo-36V"/>
                                             <outlet property="courseTitle" destination="t8f-D5-iyh" id="C7Z-Fl-yI7"/>
                                             <outlet property="portrait" destination="sSo-14-Ule" id="GWS-cZ-EBs"/>
+                                            <outlet property="startButton" destination="rXM-qz-abS" id="F7B-PL-fUL"/>
                                             <outlet property="view" destination="pts-Tp-976" id="Iwi-86-j57"/>
                                         </connections>
                                     </tableViewCell>
