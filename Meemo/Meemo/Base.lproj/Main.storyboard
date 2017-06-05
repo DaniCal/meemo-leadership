@@ -42,10 +42,10 @@
                                             <constraint firstAttribute="width" constant="281" id="Iee-HW-ydy"/>
                                             <constraint firstAttribute="height" constant="245" id="QIR-wv-NJU"/>
                                         </constraints>
-                                        <string key="text">Boost Your
-Productivity
-by in just
-7 days.</string>
+                                        <string key="text">Build a mindset
+for success in
+just 5 minutes
+a day.</string>
                                         <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="37"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -112,11 +112,10 @@ by in just
                                             <constraint firstAttribute="width" constant="281" id="esr-aW-jnn"/>
                                             <constraint firstAttribute="height" constant="245" id="iaj-PU-NCB"/>
                                         </constraints>
-                                        <string key="text">Learn through
-short videos
-from the
-world’s best.
-</string>
+                                        <string key="text">Learn from
+the world’s
+leaders &amp;
+thinkers.</string>
                                         <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="37"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -183,10 +182,10 @@ world’s best.
                                             <constraint firstAttribute="width" constant="281" id="wQL-nD-sr5"/>
                                             <constraint firstAttribute="height" constant="245" id="yeR-qX-gTJ"/>
                                         </constraints>
-                                        <string key="text">Micro-Learning
+                                        <string key="text">Micro-Videos
 tailored to You.
-Anywhere.
-Anytime.</string>
+Entertaining.
+Fast. Now.</string>
                                         <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="37"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -241,104 +240,57 @@ Anytime.</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zap-oa-oaD">
-                                <rect key="frame" x="59" y="588" width="257" height="27"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="27" id="I5U-Mv-jlB"/>
-                                    <constraint firstAttribute="width" constant="257" id="xWk-0q-M20"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="12"/>
-                                <state key="normal" title="OR GET STARTED RIGHT AWAY">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="skipIntro:" destination="aSS-D0-PRN" eventType="touchUpInside" id="Clv-eP-Gpt"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j51-xa-QtA">
-                                <rect key="frame" x="74" y="503" width="228" height="53"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="228" id="hhf-vJ-hNh"/>
-                                    <constraint firstAttribute="height" constant="53" id="lg5-GL-QGA"/>
-                                </constraints>
-                                <state key="normal" title="WATCH 2 MIN INTRO" image="watchIntroButton">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="P4T-e8-l3A" kind="popoverPresentation" popoverAnchorView="j51-xa-QtA" id="tiF-a7-aeQ">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You won’t be able to watch it later." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NGP-mo-She">
-                                <rect key="frame" x="58" y="617" width="259" height="16"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="259" id="FNK-yN-Ydf"/>
-                                    <constraint firstAttribute="height" constant="16" id="jmp-sG-Z8L"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="11"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Meemo" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VcH-3i-kU9">
                                 <rect key="frame" x="45" y="45" width="285" height="123"/>
                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="45"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6m-kR-SIH">
-                                <rect key="frame" x="60" y="203" width="256" height="115"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6m-kR-SIH">
+                                <rect key="frame" x="60" y="203" width="256" height="255"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="256" id="nKc-B7-eFv"/>
-                                    <constraint firstAttribute="height" constant="115" id="pVi-hK-ovo"/>
+                                    <constraint firstAttribute="height" constant="255" id="pVi-hK-ovo"/>
                                 </constraints>
-                                <string key="text">Unlock your full potential in
-5 minutes a day with Meemo. 
-Become a better version of
-yourself day by day.</string>
+                                <string key="text">Unlock your full potential in 5 minutes
+a day with Meemo. 
+
+Become a better version of yourself
+day by day.</string>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j51-xa-QtA">
+                                <rect key="frame" x="74" y="535" width="228" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="5sz-Xr-vyg"/>
+                                    <constraint firstAttribute="width" constant="228" id="jvz-lC-kCF"/>
+                                </constraints>
+                                <state key="normal" title="WATCH 2 MIN INTRO" image="buttonGetStarted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getStarted:" destination="aSS-D0-PRN" eventType="touchUpInside" id="9eh-bl-Xhd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.10161010175943375" green="0.10917959362268448" blue="0.14236947894096375" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="1no-ST-Jm5" firstAttribute="top" secondItem="NGP-mo-She" secondAttribute="bottom" constant="34" id="3sn-gM-2Uz"/>
+                            <constraint firstItem="j51-xa-QtA" firstAttribute="centerX" secondItem="he1-IF-37u" secondAttribute="centerX" id="2mx-sI-Ft6"/>
                             <constraint firstItem="VcH-3i-kU9" firstAttribute="top" secondItem="Gb3-FD-auJ" secondAttribute="bottom" constant="25" id="5fZ-ie-9zD"/>
                             <constraint firstItem="K6m-kR-SIH" firstAttribute="top" secondItem="VcH-3i-kU9" secondAttribute="bottom" constant="35" id="9Ez-Cp-AwL"/>
                             <constraint firstItem="K6m-kR-SIH" firstAttribute="centerX" secondItem="he1-IF-37u" secondAttribute="centerX" id="Dfj-y0-Ezg"/>
                             <constraint firstItem="VcH-3i-kU9" firstAttribute="leading" secondItem="he1-IF-37u" secondAttribute="leadingMargin" constant="29" id="O23-gk-WuG"/>
-                            <constraint firstItem="Zap-oa-oaD" firstAttribute="centerX" secondItem="he1-IF-37u" secondAttribute="centerX" id="U3x-l6-ADi"/>
-                            <constraint firstItem="j51-xa-QtA" firstAttribute="centerX" secondItem="he1-IF-37u" secondAttribute="centerX" id="Vhs-NM-BX3"/>
-                            <constraint firstItem="NGP-mo-She" firstAttribute="centerX" secondItem="he1-IF-37u" secondAttribute="centerX" id="ZmC-bT-ZyJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="VcH-3i-kU9" secondAttribute="trailing" constant="29" id="feS-rE-RwK"/>
                             <constraint firstItem="VcH-3i-kU9" firstAttribute="centerX" secondItem="he1-IF-37u" secondAttribute="centerX" id="mmO-oY-tec"/>
-                            <constraint firstItem="Zap-oa-oaD" firstAttribute="top" secondItem="j51-xa-QtA" secondAttribute="bottom" constant="32" id="pyd-fR-IAe"/>
-                            <constraint firstItem="NGP-mo-She" firstAttribute="top" secondItem="Zap-oa-oaD" secondAttribute="bottom" constant="2" id="ze6-hV-JHv"/>
+                            <constraint firstItem="1no-ST-Jm5" firstAttribute="top" secondItem="j51-xa-QtA" secondAttribute="bottom" constant="79" id="vSG-li-dD8"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GP2-9x-d4N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1480.8" y="2346.4767616191907"/>
-        </scene>
-        <!--Intro Video View Controller-->
-        <scene sceneID="JQy-ba-Taa">
-            <objects>
-                <viewController id="P4T-e8-l3A" customClass="IntroVideoViewController" customModule="Meemo" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="MQz-6t-U5A"/>
-                        <viewControllerLayoutGuide type="bottom" id="IWW-0D-gGH"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="t7X-4W-W6r">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.10161010175943375" green="0.10917959362268448" blue="0.14236947894096375" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Rmu-ZF-w4u" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2319" y="2361"/>
         </scene>
         <!--Discover-->
         <scene sceneID="VS6-NB-zcd">
@@ -371,7 +323,7 @@ yourself day by day.</string>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pts-Tp-976">
                                                     <rect key="frame" x="19" y="0.0" width="333" height="329"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="overviewtest" translatesAutoresizingMaskIntoConstraints="NO" id="Yr6-xp-kkM">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="overviewtest" translatesAutoresizingMaskIntoConstraints="NO" id="Yr6-xp-kkM">
                                                             <rect key="frame" x="0.0" y="0.0" width="333" height="140"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="140" id="klM-cB-b8W"/>
@@ -1320,6 +1272,7 @@ video. On to the next one!</string>
         <image name="badgeCloseIconWhite" width="39" height="39"/>
         <image name="badgeEmojiFire" width="108" height="139"/>
         <image name="badgeThumpsIcon" width="205" height="155"/>
+        <image name="buttonGetStarted" width="327" height="75"/>
         <image name="carouselBackgroundPlaceholder" width="122" height="237"/>
         <image name="gradientSessionsList" width="187" height="209"/>
         <image name="gradientWatchButton" width="750" height="204"/>
@@ -1330,6 +1283,5 @@ video. On to the next one!</string>
         <image name="portraitSamDustin" width="364" height="173"/>
         <image name="summaryButton" width="236" height="52"/>
         <image name="watchCourseButton" width="288" height="52"/>
-        <image name="watchIntroButton" width="327" height="75"/>
     </resources>
 </document>

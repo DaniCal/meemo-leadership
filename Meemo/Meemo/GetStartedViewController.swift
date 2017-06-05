@@ -19,8 +19,10 @@ class GetStartedViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    @IBAction func skipIntro(_ sender: Any) {
-        UserDefaults.standard.set(true, forKey: "launchedBefore")
+    
+    
+    
+    @IBAction func getStarted(_ sender: Any) {
         (UIApplication.shared.delegate as! AppDelegate).showHomeViewController()
     }
 
