@@ -30,7 +30,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, FirebaseSynchornizeDelega
     
     var mixpanel:Mixpanel!
     let mixpanelTestToken = "961d5f96adf20b0bb0a9096a9a524ffa"
-    var mixpanelToken = "961d5f96adf20b0bb0a9096a9a524ffa"
+    let mixpanelProductionToken = "72ddfa55e752f7ea570c40d9c2e52b9f"
+    var mixpanelToken = ""
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {

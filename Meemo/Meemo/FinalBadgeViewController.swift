@@ -88,7 +88,7 @@ class FinalBadgeViewController: UIViewController {
             bellImageView.isHidden = true
             lineUIView.isHidden = true
             titleLabel.text = "Congrats!"
-            textLabel.text = "You know how to get things done!! Nothing can stop you. Elon better watch out."
+            textLabel.text = "You're now done with your daily dosis of Meemo! You are such a great leaner"
         }else if(isRegisteredForRemoteNotifications){
             button.setTitle("Watch Next",for: .normal)
             reminderLabel.isHidden = true

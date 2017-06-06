@@ -42,13 +42,13 @@ class Lecture:NSObject{
         self.portraitURL = ""
         self.author = ""
         self.authorDescription = ""
-        self.portraitImage = UIImage(named: "portraitSamDustin")!
+        self.portraitImage = UIImage(named: "background1")!
         self.commingSoon = false
     }
     
     override init(){
         self.title = ""
-        self.featuredImage = UIImage(named: "carouselBackgroundPlaceholder")!
+        self.featuredImage = UIImage(named: "background1")!
         self.number = 0
         self.locked = false
         self.watched = false
@@ -57,31 +57,31 @@ class Lecture:NSObject{
         self.portraitURL = ""
         self.author = ""
         self.authorDescription = ""
-        self.portraitImage = UIImage(named: "portraitSamDustin")!
+        self.portraitImage = UIImage(named: "background1")!
         self.commingSoon = false
 
     }
     
     static func fetchLectures() -> [Lecture]{
         return[
-            Lecture(title: "Capture what's on your mind", featuredImage: UIImage(named: "carouselBackgroundPlaceholder")!, number: 1,  locked: false, watched: true),
-            Lecture(title: "Capture", featuredImage: UIImage(named: "carouselBackgroundPlaceholder")!, number: 2,  locked: false, watched: false),
-            Lecture(title: "Capture", featuredImage: UIImage(named: "carouselBackgroundPlaceholder")!, number: 3,  locked: true, watched: false),
-            Lecture(title: "Capture", featuredImage: UIImage(named: "carouselBackgroundPlaceholder")!, number: 4,  locked: true, watched: false),
-            Lecture(title: "Capture", featuredImage: UIImage(named: "carouselBackgroundPlaceholder")!, number: 5,  locked: true, watched: false),
-            Lecture(title: "Capture", featuredImage: UIImage(named: "carouselBackgroundPlaceholder")!, number: 6,  locked: true, watched: false),
-            Lecture(title: "Capture", featuredImage: UIImage(named: "carouselBackgroundPlaceholder")!, number: 7,  locked: true, watched: false),
-            Lecture(title: "Capture", featuredImage: UIImage(named: "carouselBackgroundPlaceholder")!, number: 8,  locked: true, watched: false)
+            Lecture(title: "Capture what's on your mind", featuredImage: UIImage(named: "background1")!, number: 1,  locked: false, watched: true),
+            Lecture(title: "Capture", featuredImage: UIImage(named: "background1")!, number: 2,  locked: false, watched: false),
+            Lecture(title: "Capture", featuredImage: UIImage(named: "background1")!, number: 3,  locked: true, watched: false),
+            Lecture(title: "Capture", featuredImage: UIImage(named: "background1")!, number: 4,  locked: true, watched: false),
+            Lecture(title: "Capture", featuredImage: UIImage(named: "background1")!, number: 5,  locked: true, watched: false),
+            Lecture(title: "Capture", featuredImage: UIImage(named: "background1")!, number: 6,  locked: true, watched: false),
+            Lecture(title: "Capture", featuredImage: UIImage(named: "background1")!, number: 7,  locked: true, watched: false),
+            Lecture(title: "Capture", featuredImage: UIImage(named: "background1")!, number: 8,  locked: true, watched: false)
 
         ]
     }
     
     static func fetchLecture() -> Lecture{
-        return Lecture(title: "Capture what's on your mind", featuredImage: UIImage(named: "carouselBackgroundPlaceholder")!, number: 1,  locked: false, watched: true)
+        return Lecture(title: "Capture what's on your mind", featuredImage: UIImage(named: "background1")!, number: 1,  locked: false, watched: true)
     }
     
     static func fetchDavidAllenLecture() -> Lecture{
-        let lecture = Lecture(title: "Getting Things Done", featuredImage: UIImage(named: "carouselBackgroundPlaceholder")!, number: 5,  locked: false, watched: false)
+        let lecture = Lecture(title: "Getting Things Done", featuredImage: UIImage(named: "background1")!, number: 5,  locked: false, watched: false)
         lecture.commingSoon = true
         return lecture
     }

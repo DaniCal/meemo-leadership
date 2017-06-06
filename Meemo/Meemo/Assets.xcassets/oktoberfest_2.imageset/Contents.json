@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "Oktoberfest.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "MeemoLogoRotRing.png",
       "scale" : "2x"
     },
     {

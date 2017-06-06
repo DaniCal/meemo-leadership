@@ -33,6 +33,7 @@ class VideoViewController: UIViewController {
     
     let showBadgeIdentidier = "showBadge"
     let showFinalBadgeIdentidier = "showFinalBadge"
+    let showFeedbackIdentifier = "showFeedbackBadge"
     
     var isPlaying = false
 
@@ -75,6 +76,10 @@ class VideoViewController: UIViewController {
         }else if (segue.identifier == showFinalBadgeIdentidier){
             if let destination = segue.destination as? FinalBadgeViewController{
                 destination.courseCompleted = courseCompleted
+                destination.sourceView = self
+            }
+        }else if(segue.identifier == showFeedbackIdentifier){
+            if let destination = segue.destination as? FeedbackViewController{
                 destination.sourceView = self
             }
         }
@@ -228,7 +233,7 @@ class VideoViewController: UIViewController {
             
             //Show Feedback Badge
             if(lectureNumber == 0){
-                self.performSegue(withIdentifier: "showFeedbackBadge" , sender: nil)
+                self.performSegue(withIdentifier: showFeedbackIdentifier , sender: nil)
             }
             //Set next lecture as unlocked
             else if(lectureNumber < lectures.count - 1){
