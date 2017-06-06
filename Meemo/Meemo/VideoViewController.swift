@@ -228,7 +228,7 @@ class VideoViewController: UIViewController {
             
             //Show Feedback Badge
             if(lectureNumber == 0){
-                
+                self.performSegue(withIdentifier: "showFeedbackBadge" , sender: nil)
             }
             //Set next lecture as unlocked
             else if(lectureNumber < lectures.count - 1){
