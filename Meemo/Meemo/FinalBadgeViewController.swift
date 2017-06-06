@@ -13,6 +13,8 @@ class FinalBadgeViewController: UIViewController {
     var courseCompleted:Bool = false
     var lectures: [Lecture] = []
     var lectureNumber = 0
+    var isRegisteredForRemoteNotifications = false
+
     
     @IBOutlet weak var iconImageView: UIImageView!
     var sourceView: VideoViewController?
@@ -30,20 +32,37 @@ class FinalBadgeViewController: UIViewController {
     
     @IBAction func backButtonTouch(_ sender: AnyObject) {
         dismiss(animated: true, completion: nil)
-        sourceView?.lectureCompleted()
+        if(courseCompleted){
+            sourceView?.lectureCompleted()
+        }else{
+            sourceView?.dismissVideoView()
+            sourceView?.dismiss(animated: true, completion: nil)
+        }
+        
     }
     
     @IBAction func closeButtonTouch(_ sender: AnyObject) {
         dismiss(animated: true, completion: nil)
-        sourceView?.lectureCompleted()
+        if(courseCompleted){
+            sourceView?.lectureCompleted()
+        }else{
+            sourceView?.dismissVideoView()
+            sourceView?.dismiss(animated: true, completion: nil)
+        }
     }
     
     @IBAction func turnOnNotificationTouch(_ sender: AnyObject) {
-        if(!courseCompleted){
-            (UIApplication.shared.delegate as! AppDelegate).enableNotification()
+        dismiss(animated: true, completion: nil)
+        if(courseCompleted){
+            sourceView?.lectureCompleted()
         }
-        sourceView?.lectureCompleted()
-        
+        else if(isRegisteredForRemoteNotifications){
+            sourceView?.playNextVideo()
+        }
+        else{
+            (UIApplication.shared.delegate as! AppDelegate).enableNotification()
+            sourceView?.dismissVideoView()
+        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,7 +72,6 @@ class FinalBadgeViewController: UIViewController {
         popupView.layer.cornerRadius = 10
         popupView.layer.masksToBounds = true
         
-        var isRegisteredForRemoteNotifications = false
        
         
         let notificationType = UIApplication.shared.currentUserNotificationSettings!.types
@@ -72,12 +90,12 @@ class FinalBadgeViewController: UIViewController {
             titleLabel.text = "Congrats!"
             textLabel.text = "You know how to get things done!! Nothing can stop you. Elon better watch out."
         }else if(isRegisteredForRemoteNotifications){
-            button.setTitle("Sure",for: .normal)
+            button.setTitle("Watch Next",for: .normal)
             reminderLabel.isHidden = true
             bellImageView.isHidden = true
             lineUIView.isHidden = true
             titleLabel.text = "Congrats!"
-            textLabel.text = "You've completed your day. See you back here tomorrow!"
+            textLabel.text = "Complete your daily dosis of Meemo!"
         }
         
     }

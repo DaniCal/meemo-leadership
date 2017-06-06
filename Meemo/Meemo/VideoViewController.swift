@@ -43,6 +43,7 @@ class VideoViewController: UIViewController {
 
     func dismissVideoView(){
         dismiss(animated: true, completion: nil)
+        sourceView?.dismiss(animated: true, completion: nil)
     }
     
     func lectureCompleted(){
@@ -214,16 +215,24 @@ class VideoViewController: UIViewController {
                 sessionNext()
             }
             
-            self.performSegue(withIdentifier: showBadgeIdentidier , sender: nil)
+            //Show notification badge after second view
+            if(sessionNumber == 1 && lectureNumber == 0){
+                self.performSegue(withIdentifier: showFinalBadgeIdentidier , sender: nil)
+            }else{
+                self.performSegue(withIdentifier: showBadgeIdentidier , sender: nil)
+            }
         }
         else{ // Lecture was completed - no more sessions to watch
             
             lectureWatched()
             
-            //Set next lecture as unlocked
-            if(lectureNumber < lectures.count - 1){
-                lectureUnlock()
+            //Show Feedback Badge
+            if(lectureNumber == 0){
                 
+            }
+            //Set next lecture as unlocked
+            else if(lectureNumber < lectures.count - 1){
+                courseCompleted = true
                 self.performSegue(withIdentifier: showFinalBadgeIdentidier , sender: nil)
             }else{
                 Mixpanel.sharedInstance()?.track("finished_course")
