@@ -93,6 +93,8 @@ class FirebaseSynchronizer: NSObject{
         lecture.authorDescription = (lectureSnapshot.childSnapshot(forPath: "authorDescription").value as? String)!
         lecture.portraitURL = (lectureSnapshot.childSnapshot(forPath: "portraitURL").value as? String)!
         
+        lecture.commingSoon = !(lectureSnapshot.childSnapshot(forPath: "available").value as? Bool)!
+
         
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         var lecturesMO: [LectureMO] = []

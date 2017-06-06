@@ -80,6 +80,12 @@ class Lecture:NSObject{
         return Lecture(title: "Capture what's on your mind", featuredImage: UIImage(named: "carouselBackgroundPlaceholder")!, number: 1,  locked: false, watched: true)
     }
     
+    static func fetchDavidAllenLecture() -> Lecture{
+        let lecture = Lecture(title: "Getting Things Done", featuredImage: UIImage(named: "carouselBackgroundPlaceholder")!, number: 5,  locked: false, watched: false)
+        lecture.commingSoon = true
+        return lecture
+    }
+    
     func dayTitle()-> String{
         return "Chapter \(String(number))"
     }

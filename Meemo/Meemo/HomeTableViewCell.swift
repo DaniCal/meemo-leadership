@@ -69,6 +69,10 @@ class HomeTableViewCell: UITableViewCell {
                 clipsLeftLabel.text = "\(clipsLeft) clips left"
             }
             
+            if(lecture.commingSoon){
+                clipsLeftLabel.isHidden = true
+            }
+            
             view.layer.cornerRadius = 12
             view.layer.masksToBounds = true
 
